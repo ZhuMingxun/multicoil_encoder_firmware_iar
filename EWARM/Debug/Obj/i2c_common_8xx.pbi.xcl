@@ -1,10 +1,10 @@
-"C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\chip_82x\src\i2c_common_8xx.c"
+"C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\chip_82x\src\i2c_common_8xx.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\..\chip_82x\inc
+C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\..\chip_82x\inc
 -I
-C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\..\user
+C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\..\user
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\CMSIS\Include
 -I
@@ -12,9 +12,9 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\inc\c
 -I
-C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\chip_82x\inc
+C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\chip_82x\inc
 -I
-C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\user
+C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\user
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\CMSIS\Include
 -DCORE_M0PLUS=1

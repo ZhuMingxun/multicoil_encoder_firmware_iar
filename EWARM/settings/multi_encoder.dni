@@ -39,7 +39,7 @@ TraceBufferSize=0x00010000
 TraceStallIfFIFOFull=0x00000000
 TracePortSize=0x00000000
 [DebugChecksum]
-Checksum=570375467
+Checksum=-141353187
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -85,5 +85,10 @@ mode=0
 [Breakpoints2]
 Count=0
 [Aliases]
-Count=0
-SuppressDialog=0
+A0=_ "C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\chip_82x\inc\core_cm0plus.h" ""
+A1=_ "C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\chip_82x\inc\gpio_8xx.h" ""
+A2=_ "C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\chip_82x\startup\iar_startup_lpc82x.s" ""
+A3=_ "C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\user\ecd_flash.h" ""
+A4=_ "C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\user\main.c" ""
+Count=5
+SuppressDialog=1

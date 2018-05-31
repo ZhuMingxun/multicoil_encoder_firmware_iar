@@ -34,7 +34,11 @@ void SampleAndCalcEncoderValue()
 
 void Detect_MS_Dir()
 {
- 
+    
+    
+    
+    
+    
     
 }
 

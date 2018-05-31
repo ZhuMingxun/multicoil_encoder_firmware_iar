@@ -11,7 +11,7 @@
 #ifndef _ECD_FLASH_H
 #define _ECD_FLASH_H
 
-#define SAVE_FLAG       (0xAAAA5555)
+#define SAVE_FLAG       (0xAAAA5556)
 #define SAVE_PAGE_NUM   (240)
 #define SAVE_SECTOR     (15)
 

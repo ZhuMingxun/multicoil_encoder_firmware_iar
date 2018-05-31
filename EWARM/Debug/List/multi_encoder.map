@@ -1,57 +1,57 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.80.4.12462/W32 for ARM                30/May/2018  23:21:05
+# IAR ELF Linker V7.80.4.12462/W32 for ARM                31/May/2018  23:03:09
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Exe\multi_encoder.out.tmp
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Exe\multi_encoder.out.tmp
 #    Map file     =  
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\List\multi_encoder.map
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\List\multi_encoder.map
 #    Command line =  
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\acmp_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\adc_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\calc_value.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\chip_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\clock_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\crc_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\dma_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\ecd_flash.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\eeprom.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\gpio_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\i2c_common_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\i2cm_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\i2cs_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\iap.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\iar_startup_lpc82x.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\iocon_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\irc_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\led.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\main.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\mlx90316.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\pinint_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\pmu_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\ring_buffer.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\rtc_ut.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sct_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sct_pwm_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\spi_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\spi_slaver.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\spim_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\spis_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\stopwatch_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\swm_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\syscon_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sysinit.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sysinit_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\uart_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\wkt_8xx.o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\wwdt_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\acmp_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\adc_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\calc_value.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\chip_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\clock_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\crc_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\dma_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\ecd_flash.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\eeprom.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\gpio_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\i2c_common_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\i2cm_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\i2cs_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\iap.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\iar_startup_lpc82x.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\iocon_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\irc_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\led.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\main.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\mlx90316.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\pinint_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\pmu_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\ring_buffer.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\rtc_ut.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sct_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sct_pwm_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\spi_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\spi_slaver.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\spim_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\spis_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\stopwatch_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\swm_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\syscon_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sysinit.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sysinit_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\uart_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\wkt_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\wwdt_8xx.o
 #        -o
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Exe\multi_encoder.out.tmp
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Exe\multi_encoder.out.tmp
 #        --map
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\List\multi_encoder.map
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\List\multi_encoder.map
 #        --config
-#        C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\multi_encoder.icf
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\multi_encoder.icf
 #        --semihosting --entry __iar_program_start --vfe
 #
 ###############################################################################
@@ -91,7 +91,7 @@ initialize by copy { rw };
   .crp               ro code  0x000002fc     0x4  iar_startup_lpc82x.o [1]
                             - 0x00000300     0x4
 
-"P1", part 2 of 2:                        0x1858
+"P1", part 2 of 2:                        0x18a4
   .text              ro code  0x00000300   0x36c  spi_slaver.o [1]
   .text              ro code  0x0000066c    0x24  iocon_8xx.o [1]
   .text              ro code  0x00000690    0x38  swm_8xx.o [1]
@@ -114,33 +114,34 @@ initialize by copy { rw };
   .text              ro code  0x00001460    0x10  chip_8xx.o [1]
   .text              ro code  0x00001470    0x50  led.o [1]
   .text              ro code  0x000014c0    0x5c  ecd_flash.o [1]
-  .text              ro code  0x0000151c   0x11c  calc_value.o [1]
-  .text              ro code  0x00001638    0x26  gpio_8xx.o [1]
-  .text              ro code  0x0000165e     0x2  iar_startup_lpc82x.o [1]
-  .text              ro code  0x00001660    0x84  iap.o [1]
-  .text              ro code  0x000016e4    0xaa  FltDiv.o [4]
-  .text              ro code  0x0000178e    0xb0  FltMul.o [4]
-  .text              ro code  0x00001840    0x26  FltToU32.o [4]
-  .text              ro code  0x00001868   0x120  irc_8xx.o [1]
-  .text              ro code  0x00001988    0x40  syscon_8xx.o [1]
-  .rodata            const    0x000019c8    0x40  clock_8xx.o [1]
-  .text              ro code  0x00001a08    0x3c  zero_init3.o [5]
-  .text              ro code  0x00001a44    0x30  copy_init3.o [5]
-  .text              ro code  0x00001a74    0x28  data_init.o [5]
-  .iar.init_table    const    0x00001a9c    0x24  - Linker created -
-  .text              ro code  0x00001ac0    0x20  sysinit_8xx.o [1]
-  .text              ro code  0x00001ae0    0x1a  cmain.o [5]
-  .text              ro code  0x00001afa     0x4  low_level_init.o [3]
-  .text              ro code  0x00001afe     0x8  exit.o [3]
-  .text              ro code  0x00001b08     0xa  cexit.o [5]
-  .text              ro code  0x00001b14    0x14  exit.o [6]
-  .text              ro code  0x00001b28    0x10  iar_startup_lpc82x.o [1]
-  .text              ro code  0x00001b38     0xc  cstartup_M.o [5]
-  .text              ro code  0x00001b44     0x8  sysinit.o [1]
-  .rodata            const    0x00001b4c     0x4  sysinit.o [1]
-  .rodata            const    0x00001b50     0x4  sysinit.o [1]
-  .text              ro code  0x00001b54     0x4  iar_startup_lpc82x.o [1]
-                            - 0x00001b58  0x1858
+  .text              ro code  0x0000151c   0x160  calc_value.o [1]
+  .text              ro code  0x0000167c    0x26  gpio_8xx.o [1]
+  .text              ro code  0x000016a2     0x2  iar_startup_lpc82x.o [1]
+  .text              ro code  0x000016a4    0x84  iap.o [1]
+  .text              ro code  0x00001728     0x8  abs.o [3]
+  .text              ro code  0x00001730    0xaa  FltDiv.o [4]
+  .text              ro code  0x000017da    0xb0  FltMul.o [4]
+  .text              ro code  0x0000188c    0x26  FltToU32.o [4]
+  .text              ro code  0x000018b4   0x120  irc_8xx.o [1]
+  .text              ro code  0x000019d4    0x40  syscon_8xx.o [1]
+  .rodata            const    0x00001a14    0x40  clock_8xx.o [1]
+  .text              ro code  0x00001a54    0x3c  zero_init3.o [5]
+  .text              ro code  0x00001a90    0x30  copy_init3.o [5]
+  .text              ro code  0x00001ac0    0x28  data_init.o [5]
+  .iar.init_table    const    0x00001ae8    0x24  - Linker created -
+  .text              ro code  0x00001b0c    0x20  sysinit_8xx.o [1]
+  .text              ro code  0x00001b2c    0x1a  cmain.o [5]
+  .text              ro code  0x00001b46     0x4  low_level_init.o [3]
+  .text              ro code  0x00001b4a     0x8  exit.o [3]
+  .text              ro code  0x00001b54     0xa  cexit.o [5]
+  .text              ro code  0x00001b60    0x14  exit.o [6]
+  .text              ro code  0x00001b74    0x10  iar_startup_lpc82x.o [1]
+  .text              ro code  0x00001b84     0xc  cstartup_M.o [5]
+  .text              ro code  0x00001b90     0x8  sysinit.o [1]
+  .rodata            const    0x00001b98     0x4  sysinit.o [1]
+  .rodata            const    0x00001b9c     0x4  sysinit.o [1]
+  .text              ro code  0x00001ba0     0x4  iar_startup_lpc82x.o [1]
+                            - 0x00001ba4  0x18a4
 
 "P2", part 1 of 3:                           0x8
   P2 s0                       0x10000020     0x8  <Init block>
@@ -197,8 +198,8 @@ Copy (__iar_copy_init3)
 
     Module                ro code  ro data  rw data
     ------                -------  -------  -------
-C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj: [1]
-    calc_value.o              284        8       40
+C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj: [1]
+    calc_value.o              352        8       40
     chip_8xx.o                 16                 4
     clock_8xx.o               304       64
     ecd_flash.o                92                64
@@ -217,17 +218,18 @@ C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_i
     sysinit.o                   8        8
     sysinit_8xx.o              32
     -----------------------------------------------
-    Total:                  3 910      934      157
+    Total:                  3 978      934      157
 
 command line: [2]
     -----------------------------------------------
     Total:
 
 dl6M_tlf.a: [3]
+    abs.o                       8
     exit.o                      8
     low_level_init.o            4
     -----------------------------------------------
-    Total:                     12
+    Total:                     20
 
 m6M_tl.a: [4]
     DblDiv.o                  194
@@ -261,7 +263,7 @@ shb_l.a: [6]
     Gaps                        8
     Linker created                      36      512
 ---------------------------------------------------
-    Grand Total:            5 466      970      669
+    Grand Total:            5 542      970      669
 
 
 *******************************************************************************
@@ -270,19 +272,19 @@ shb_l.a: [6]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x00001a9c          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x00001ac0          --   Gb  - Linker created -
-?main                   0x00001ae1         Code  Gb  cmain.o [5]
+.iar.init_table$$Base   0x00001ae8          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00001b0c          --   Gb  - Linker created -
+?main                   0x00001b2d         Code  Gb  cmain.o [5]
 CSTACK$$Base            0x100000c0          --   Gb  - Linker created -
 CSTACK$$Limit           0x100002c0          --   Gb  - Linker created -
-Calc_Master_Delta       0x00001553   0x74  Code  Lc  calc_value.o [1]
-Calc_Slaver_Delta       0x0000151d   0x36  Code  Lc  calc_value.o [1]
+Calc_Master_Delta       0x00001575   0x96  Code  Lc  calc_value.o [1]
+Calc_Slaver_Delta       0x0000151d   0x58  Code  Lc  calc_value.o [1]
 Chip_Clock_DisablePeriphClock
                         0x00000a6f   0x14  Code  Lc  mlx90316.o [1]
 Chip_Clock_DisablePeriphClock
                         0x00000361   0x14  Code  Lc  spi_slaver.o [1]
 Chip_Clock_EnablePeriphClock
-                        0x00001639   0x14  Code  Lc  gpio_8xx.o [1]
+                        0x0000167d   0x14  Code  Lc  gpio_8xx.o [1]
 Chip_Clock_EnablePeriphClock
                         0x00000a5b   0x14  Code  Lc  mlx90316.o [1]
 Chip_Clock_EnablePeriphClock
@@ -307,29 +309,29 @@ Chip_Clock_GetWDTLFORate
 Chip_Clock_GetWDTOSCRate
                         0x00001133   0x10  Code  Gb  clock_8xx.o [1]
 Chip_Clock_IsSystemPLLLocked
-                        0x0000187f    0xc  Code  Lc  irc_8xx.o [1]
+                        0x000018cb    0xc  Code  Lc  irc_8xx.o [1]
 Chip_Clock_SetMainClockSource
                         0x0000111f   0x14  Code  Gb  clock_8xx.o [1]
 Chip_Clock_SetSysClockDiv
-                        0x0000188b    0x6  Code  Lc  irc_8xx.o [1]
+                        0x000018d7    0x6  Code  Lc  irc_8xx.o [1]
 Chip_Clock_SetSystemPLLSource
                         0x0000110b   0x14  Code  Gb  clock_8xx.o [1]
 Chip_Clock_SetupSystemPLL
-                        0x00001869   0x16  Code  Lc  irc_8xx.o [1]
+                        0x000018b5   0x16  Code  Lc  irc_8xx.o [1]
 Chip_FMC_SetFLASHAccess
-                        0x00001891   0x10  Code  Lc  irc_8xx.o [1]
-Chip_GPIO_Init          0x00001655    0xa  Code  Gb  gpio_8xx.o [1]
+                        0x000018dd   0x10  Code  Lc  irc_8xx.o [1]
+Chip_GPIO_Init          0x00001699    0xa  Code  Gb  gpio_8xx.o [1]
 Chip_GPIO_SetPinDIROutput
                         0x00001471   0x14  Code  Lc  led.o [1]
 Chip_GPIO_SetPinToggle  0x00001485   0x14  Code  Lc  led.o [1]
 Chip_IAP_CopyRamToFlash
-                        0x00001685   0x2c  Code  Gb  iap.o [1]
-Chip_IAP_ErasePage      0x000016b1   0x2a  Code  Gb  iap.o [1]
+                        0x000016c9   0x2c  Code  Gb  iap.o [1]
+Chip_IAP_ErasePage      0x000016f5   0x2a  Code  Gb  iap.o [1]
 Chip_IAP_PreSectorForReadWrite
-                        0x00001669   0x1c  Code  Gb  iap.o [1]
+                        0x000016ad   0x1c  Code  Gb  iap.o [1]
 Chip_IOCON_PinSetI2CMode
                         0x0000066d   0x20  Code  Gb  iocon_8xx.o [1]
-Chip_IRC_SetFreq        0x000018eb   0x7e  Code  Gb  irc_8xx.o [1]
+Chip_IRC_SetFreq        0x00001937   0x7e  Code  Gb  irc_8xx.o [1]
 Chip_SPIM_DelayConfig   0x00000d9b   0x32  Code  Gb  spim_8xx.o [1]
 Chip_SPIM_GetClockRate  0x00000d59   0x14  Code  Gb  spim_8xx.o [1]
 Chip_SPIM_SetClockRate  0x00000d6d   0x2e  Code  Gb  spim_8xx.o [1]
@@ -373,11 +375,11 @@ Chip_SYSCTL_PeriphReset
                         0x00000a45   0x16  Code  Lc  mlx90316.o [1]
 Chip_SYSCTL_PeriphReset
                         0x00000337   0x16  Code  Lc  spi_slaver.o [1]
-Chip_SYSCTL_PowerDown   0x00001989   0x1c  Code  Gb  syscon_8xx.o [1]
-Chip_SYSCTL_PowerUp     0x000019a5   0x1a  Code  Gb  syscon_8xx.o [1]
-Chip_SetupIrcClocking   0x00001ac1    0xc  Code  Gb  sysinit_8xx.o [1]
-Chip_SystemInit         0x00001ad9    0x8  Code  Gb  sysinit_8xx.o [1]
-ExtRateIn               0x00001b50    0x4  Data  Gb  sysinit.o [1]
+Chip_SYSCTL_PowerDown   0x000019d5   0x1c  Code  Gb  syscon_8xx.o [1]
+Chip_SYSCTL_PowerUp     0x000019f1   0x1a  Code  Gb  syscon_8xx.o [1]
+Chip_SetupIrcClocking   0x00001b0d    0xc  Code  Gb  sysinit_8xx.o [1]
+Chip_SystemInit         0x00001b25    0x8  Code  Gb  sysinit_8xx.o [1]
+ExtRateIn               0x00001b9c    0x4  Data  Gb  sysinit.o [1]
 Init_SPIS_PinMux        0x00000497   0x46  Code  Lc  spi_slaver.o [1]
 Init_SPI_PinMux         0x00000b29   0x4e  Code  Lc  mlx90316.o [1]
 LED_GPIO_Config         0x00001499   0x18  Code  Gb  led.o [1]
@@ -386,14 +388,14 @@ MLX90316_ReadData       0x00000c4d   0xc8  Code  Gb  mlx90316.o [1]
 Mlx90316_SPI_Config     0x00000c41    0xc  Code  Gb  mlx90316.o [1]
 NVIC_EnableIRQ          0x00000301    0xe  Code  Lc  spi_slaver.o [1]
 NVIC_SetPriority        0x000012b1   0x84  Code  Lc  main.o [1]
-OscRateIn               0x00001b4c    0x4  Data  Gb  sysinit.o [1]
+OscRateIn               0x00001b98    0x4  Data  Gb  sysinit.o [1]
 RatioK                  0x10000024    0x4  Data  Lc  calc_value.o [1]
 ReadMSDir               0x00001379    0x6  Code  Lc  main.o [1]
 ReadMasterStartValue    0x00001373    0x6  Code  Lc  main.o [1]
 ReadRecordFlag          0x00001365    0x8  Code  Lc  main.o [1]
 ReadSlaverStartValue    0x0000136d    0x6  Code  Lc  main.o [1]
-Region$$Table$$Base     0x00001a9c          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00001ac0          --   Gb  - Linker created -
+Region$$Table$$Base     0x00001ae8          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00001b0c          --   Gb  - Linker created -
 SPI1_IRQHandler         0x00000531   0xec  Code  Gb  spi_slaver.o [1]
 SPI1_IRQHandler::dummy_datah
                         0x100000b9    0x1  Data  Lc  spi_slaver.o [1]
@@ -414,7 +416,7 @@ SPI1_IRQHandler::rcvtmp
 SPI1_WaitRXRDY          0x0000044b   0x24  Code  Gb  spi_slaver.o [1]
 SPI1_WaitTXRDY          0x00000427   0x24  Code  Gb  spi_slaver.o [1]
 SampleAndCalcEncoderValue
-                        0x000015c7   0x62  Code  Gb  calc_value.o [1]
+                        0x0000160b   0x62  Code  Gb  calc_value.o [1]
 SendRecv_Start          0x00000bcb   0x2a  Code  Lc  mlx90316.o [1]
 SendRecv_Stop           0x00000c1b   0x26  Code  Lc  mlx90316.o [1]
 Send_Byte               0x00000bf5   0x26  Code  Lc  mlx90316.o [1]
@@ -426,7 +428,7 @@ SysTick_Handler::mlx_rd_cnt
                         0x100000b2    0x2  Data  Lc  main.o [1]
 SystemCoreClock         0x100000a8    0x4  Data  Gb  chip_8xx.o [1]
 SystemCoreClockUpdate   0x00001461   0x10  Code  Gb  chip_8xx.o [1]
-SystemInit              0x00001b45    0x8  Code  Gb  sysinit.o [1]
+SystemInit              0x00001b91    0x8  Code  Gb  sysinit.o [1]
 WriteSlaverStartValue   0x000014c1   0x5c  Code  Gb  ecd_flash.o [1]
 __Vectors               0x00000000          --   Gb  iar_startup_lpc82x.o [1]
 __Vectors_End           0x000000c0         Data  Gb  iar_startup_lpc82x.o [1]
@@ -435,52 +437,53 @@ __aeabi_d2f             0x00001069         Code  Gb  DblToFlt.o [4]
 __aeabi_ddiv            0x00000e23         Code  Gb  DblDiv.o [4]
 __aeabi_dmul            0x00000ee5         Code  Gb  DblMul.o [4]
 __aeabi_f2d             0x00000df1         Code  Gb  FltToDbl.o [4]
-__aeabi_f2uiz           0x00001841         Code  Gb  FltToU32.o [4]
-__aeabi_fdiv            0x000016e5         Code  Gb  FltDiv.o [4]
-__aeabi_fmul            0x0000178f         Code  Gb  FltMul.o [4]
+__aeabi_f2uiz           0x0000188d         Code  Gb  FltToU32.o [4]
+__aeabi_fdiv            0x00001731         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x000017db         Code  Gb  FltMul.o [4]
 __aeabi_idiv0           0x000012ad         Code  Gb  IntDivZer.o [5]
 __aeabi_ui2f            0x00000dd1         Code  Gb  I32ToFlt.o [4]
 __aeabi_uidiv           0x000011fd         Code  Gb  I32DivModFast.o [5]
 __aeabi_uidivmod        0x000011fd         Code  Gb  I32DivModFast.o [5]
-__cmain                 0x00001ae1         Code  Gb  cmain.o [5]
-__exit                  0x00001b15   0x14  Code  Gb  exit.o [6]
-__iar_copy_init3        0x00001a45   0x30  Code  Gb  copy_init3.o [5]
-__iar_data_init3        0x00001a75   0x28  Code  Gb  data_init.o [5]
-__iar_program_start     0x00001b39         Code  Gb  cstartup_M.o [5]
+__cmain                 0x00001b2d         Code  Gb  cmain.o [5]
+__exit                  0x00001b61   0x14  Code  Gb  exit.o [6]
+__iar_copy_init3        0x00001a91   0x30  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x00001ac1   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x00001b85         Code  Gb  cstartup_M.o [5]
 __iar_ui2f              0x00000dd5         Code  Gb  I32ToFlt.o [4]
-__iar_zero_init3        0x00001a09   0x3c  Code  Gb  zero_init3.o [5]
-__low_level_init        0x00001afb    0x4  Code  Gb  low_level_init.o [3]
+__iar_zero_init3        0x00001a55   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00001b47    0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x00000000         Data  Gb  iar_startup_lpc82x.o [1]
 __vector_table_0x1c     0x00000010         Data  Gb  iar_startup_lpc82x.o [1]
-_call_main              0x00001aed         Code  Gb  cmain.o [5]
-_exit                   0x00001b09         Code  Gb  cexit.o [5]
-_main                   0x00001af7         Code  Gb  cmain.o [5]
+_call_main              0x00001b39         Code  Gb  cmain.o [5]
+_exit                   0x00001b55         Code  Gb  cexit.o [5]
+_main                   0x00001b43         Code  Gb  cmain.o [5]
+abs                     0x00001729    0x8  Code  Gb  abs.o [3]
 config_tab              0x000006c8  0x354  Data  Lc  irc_8xx.o [1]
 config_tab_ct           0x00000dee    0x2  Data  Lc  irc_8xx.o [1]
 config_tab_idx          0x100000b0    0x2  Data  Lc  irc_8xx.o [1]
 ecdval                  0x10000028   0x40  Data  Gb  ecd_flash.o [1]
-exit                    0x00001aff    0x8  Code  Gb  exit.o [3]
-iap_entry               0x00001661    0x8  Code  Lc  iap.o [1]
+exit                    0x00001b4b    0x8  Code  Gb  exit.o [3]
+iap_entry               0x000016a5    0x8  Code  Lc  iap.o [1]
 main                    0x0000137f   0x8a  Code  Gb  main.o [1]
 mlx_rd_flag             0x100000b6    0x1  Data  Lc  main.o [1]
-pll_config              0x000018a1   0x4a  Code  Lc  irc_8xx.o [1]
+pll_config              0x000018ed   0x4a  Code  Lc  irc_8xx.o [1]
 psEncoderValue          0x10000020    0x4  Data  Gb  calc_value.o [1]
 sEncoderValue           0x10000068   0x20  Data  Gb  calc_value.o [1]
 setupMaster             0x00000b77   0x54  Code  Lc  mlx90316.o [1]
 setupMaster::spi_clk_rate
                         0x100000ac    0x4  Data  Lc  mlx90316.o [1]
 setupSlave              0x000004dd   0x3e  Code  Lc  spi_slaver.o [1]
-wdtOSCRate              0x000019c8   0x40  Data  Lc  clock_8xx.o [1]
+wdtOSCRate              0x00001a14   0x40  Data  Lc  clock_8xx.o [1]
 
 
-[1] = C:\Users\Administrator\Desktop\multicoil_encoder_fw\multicoil_encoder_firmware_iar\EWARM\Debug\Obj
+[1] = C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj
 [2] = command line
 [3] = dl6M_tlf.a
 [4] = m6M_tl.a
 [5] = rt6M_tl.a
 [6] = shb_l.a
 
-  5 466 bytes of readonly  code memory
+  5 542 bytes of readonly  code memory
     970 bytes of readonly  data memory
     669 bytes of readwrite data memory
 
