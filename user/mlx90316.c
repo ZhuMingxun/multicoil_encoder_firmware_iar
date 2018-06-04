@@ -160,6 +160,8 @@ uint16_t  MLX90316_ReadData(uint8_t sseln)
     uint16_t inverted_frame = 0;
     uint16_t angle = 0;
     float anglef = 0.0;
+    static uint16_t angle_14b;
+    
 
     //¶ÁÈ¡90316¡ª¡ªA ====================================================================
 
@@ -200,7 +202,8 @@ uint16_t  MLX90316_ReadData(uint8_t sseln)
 
     inverted_frame = ((uint16_t)inverted_frameh<<8 & 0xFF00) | ((uint16_t)inverted_framel & 0x00FF);
 
-    return angle;
+    angle_14b = angle;
+    return angle>>0;
 
 }
 

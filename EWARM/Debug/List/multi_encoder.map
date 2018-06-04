@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.80.4.12462/W32 for ARM                31/May/2018  23:03:09
+# IAR ELF Linker V7.80.4.12462/W32 for ARM                05/Jun/2018  00:10:04
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
@@ -43,6 +43,7 @@
 #        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\syscon_8xx.o
 #        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sysinit.o
 #        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\sysinit_8xx.o
+#        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\uart.o
 #        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\uart_8xx.o
 #        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\wkt_8xx.o
 #        C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj\wwdt_8xx.o
@@ -81,97 +82,111 @@ initialize by copy { rw };
   .intvec            ro code  0x00000000    0xc0  iar_startup_lpc82x.o [1]
                             - 0x000000c0    0xc0
 
-"P1", part 1 of 2:                           0x8
+"P1", part 1 of 2:                          0x48
   .rodata            const    0x000000c0     0x0  zero_init3.o [5]
   .rodata            const    0x000000c0     0x0  copy_init3.o [5]
-  Initializer bytes  const    0x000000c0     0x8  <for P2 s0>
-                            - 0x000000c8     0x8
+  Initializer bytes  const    0x000000c0    0x48  <for P2 s0>
+                            - 0x00000108    0x48
 
 "P3":                                        0x4
   .crp               ro code  0x000002fc     0x4  iar_startup_lpc82x.o [1]
                             - 0x00000300     0x4
 
-"P1", part 2 of 2:                        0x18a4
-  .text              ro code  0x00000300   0x36c  spi_slaver.o [1]
-  .text              ro code  0x0000066c    0x24  iocon_8xx.o [1]
-  .text              ro code  0x00000690    0x38  swm_8xx.o [1]
-  .rodata            const    0x000006c8   0x354  irc_8xx.o [1]
-  .text              ro code  0x00000a1c   0x33c  mlx90316.o [1]
-  .text              ro code  0x00000d58    0x78  spim_8xx.o [1]
-  .text              ro code  0x00000dd0    0x1e  I32ToFlt.o [4]
-  .rodata            const    0x00000dee     0x2  irc_8xx.o [1]
-  .text              ro code  0x00000df0    0x32  FltToDbl.o [4]
-  .text              ro code  0x00000e22    0xc2  DblDiv.o [4]
-  .text              ro code  0x00000ee4   0x184  DblMul.o [4]
-  .text              ro code  0x00001068    0x62  DblToFlt.o [4]
-  .text              ro code  0x000010ca     0x2  iar_startup_lpc82x.o [1]
-  .text              ro code  0x000010cc   0x130  clock_8xx.o [1]
-  .text              ro code  0x000011fc    0xae  I32DivModFast.o [5]
-  .text              ro code  0x000012aa     0x2  iar_startup_lpc82x.o [1]
-  .text              ro code  0x000012ac     0x2  IntDivZer.o [5]
-  .text              ro code  0x000012ae     0x2  iar_startup_lpc82x.o [1]
-  .text              ro code  0x000012b0   0x1b0  main.o [1]
-  .text              ro code  0x00001460    0x10  chip_8xx.o [1]
-  .text              ro code  0x00001470    0x50  led.o [1]
-  .text              ro code  0x000014c0    0x5c  ecd_flash.o [1]
-  .text              ro code  0x0000151c   0x160  calc_value.o [1]
-  .text              ro code  0x0000167c    0x26  gpio_8xx.o [1]
-  .text              ro code  0x000016a2     0x2  iar_startup_lpc82x.o [1]
-  .text              ro code  0x000016a4    0x84  iap.o [1]
-  .text              ro code  0x00001728     0x8  abs.o [3]
-  .text              ro code  0x00001730    0xaa  FltDiv.o [4]
-  .text              ro code  0x000017da    0xb0  FltMul.o [4]
-  .text              ro code  0x0000188c    0x26  FltToU32.o [4]
-  .text              ro code  0x000018b4   0x120  irc_8xx.o [1]
-  .text              ro code  0x000019d4    0x40  syscon_8xx.o [1]
-  .rodata            const    0x00001a14    0x40  clock_8xx.o [1]
-  .text              ro code  0x00001a54    0x3c  zero_init3.o [5]
-  .text              ro code  0x00001a90    0x30  copy_init3.o [5]
-  .text              ro code  0x00001ac0    0x28  data_init.o [5]
-  .iar.init_table    const    0x00001ae8    0x24  - Linker created -
-  .text              ro code  0x00001b0c    0x20  sysinit_8xx.o [1]
-  .text              ro code  0x00001b2c    0x1a  cmain.o [5]
-  .text              ro code  0x00001b46     0x4  low_level_init.o [3]
-  .text              ro code  0x00001b4a     0x8  exit.o [3]
-  .text              ro code  0x00001b54     0xa  cexit.o [5]
-  .text              ro code  0x00001b60    0x14  exit.o [6]
-  .text              ro code  0x00001b74    0x10  iar_startup_lpc82x.o [1]
-  .text              ro code  0x00001b84     0xc  cstartup_M.o [5]
-  .text              ro code  0x00001b90     0x8  sysinit.o [1]
-  .rodata            const    0x00001b98     0x4  sysinit.o [1]
-  .rodata            const    0x00001b9c     0x4  sysinit.o [1]
-  .text              ro code  0x00001ba0     0x4  iar_startup_lpc82x.o [1]
-                            - 0x00001ba4  0x18a4
+"P1", part 2 of 2:                        0x1e90
+  .text              ro code  0x00000300   0x380  spi_slaver.o [1]
+  .text              ro code  0x00000680    0x24  iocon_8xx.o [1]
+  .text              ro code  0x000006a4    0x38  swm_8xx.o [1]
+  .rodata            const    0x000006dc   0x354  irc_8xx.o [1]
+  .text              ro code  0x00000a30   0x344  mlx90316.o [1]
+  .text              ro code  0x00000d74    0x78  spim_8xx.o [1]
+  .text              ro code  0x00000dec    0x1e  I32ToFlt.o [4]
+  .rodata            const    0x00000e0a     0x2  irc_8xx.o [1]
+  .text              ro code  0x00000e0c    0x32  FltToDbl.o [4]
+  .text              ro code  0x00000e3e    0xc2  DblDiv.o [4]
+  .text              ro code  0x00000f00   0x184  DblMul.o [4]
+  .text              ro code  0x00001084    0x62  DblToFlt.o [4]
+  .text              ro code  0x000010e6     0x2  iar_startup_lpc82x.o [1]
+  .text              ro code  0x000010e8   0x260  clock_8xx.o [1]
+  .text              ro code  0x00001348    0xae  I32DivModFast.o [5]
+  .text              ro code  0x000013f6     0x2  iar_startup_lpc82x.o [1]
+  .text              ro code  0x000013f8    0x32  I64Mul.o [5]
+  .text              ro code  0x0000142a    0x6a  I64DivMod.o [5]
+  .text              ro code  0x00001494     0x2  IntDivZer.o [5]
+  .text              ro code  0x00001496     0x2  iar_startup_lpc82x.o [1]
+  .text              ro code  0x00001498     0x2  I64DivZer.o [5]
+  .text              ro code  0x0000149a     0x2  iar_startup_lpc82x.o [1]
+  .text              ro code  0x0000149c   0x1c8  main.o [1]
+  .text              ro code  0x00001664    0x10  chip_8xx.o [1]
+  .text              ro code  0x00001674    0x50  led.o [1]
+  .text              ro code  0x000016c4   0x128  uart.o [1]
+  .text              ro code  0x000017ec    0x5c  ecd_flash.o [1]
+  .text              ro code  0x00001848   0x160  calc_value.o [1]
+  .text              ro code  0x000019a8    0x24  printf.o [3]
+  .text              ro code  0x000019cc    0x26  gpio_8xx.o [1]
+  .text              ro code  0x000019f4    0xda  uart_8xx.o [1]
+  .text              ro code  0x00001ad0    0x84  iap.o [1]
+  .text              ro code  0x00001b54     0x8  abs.o [3]
+  .text              ro code  0x00001b5c    0xaa  FltDiv.o [4]
+  .text              ro code  0x00001c06    0xb0  FltMul.o [4]
+  .text              ro code  0x00001cb8    0x26  FltToU32.o [4]
+  .text              ro code  0x00001cde   0x180  xprintftiny.o [3]
+  .text              ro code  0x00001e5e    0x10  strlen.o [5]
+  .text              ro code  0x00001e70   0x120  irc_8xx.o [1]
+  .text              ro code  0x00001f90    0x40  syscon_8xx.o [1]
+  .rodata            const    0x00001fd0    0x40  clock_8xx.o [1]
+  .text              ro code  0x00002010    0x3c  zero_init3.o [5]
+  .text              ro code  0x0000204c    0x30  copy_init3.o [5]
+  .text              ro code  0x0000207c    0x28  data_init.o [5]
+  .iar.init_table    const    0x000020a4    0x24  - Linker created -
+  .text              ro code  0x000020c8    0x20  sysinit_8xx.o [1]
+  .text              ro code  0x000020e8    0x1a  cmain.o [5]
+  .text              ro code  0x00002102     0x4  low_level_init.o [3]
+  .text              ro code  0x00002106     0x8  exit.o [3]
+  .text              ro code  0x00002110     0xa  cexit.o [5]
+  .text              ro code  0x0000211c    0x14  exit.o [6]
+  .text              ro code  0x00002130    0x16  xprout.o [3]
+  .text              ro code  0x00002148    0x10  putchar.o [3]
+  .text              ro code  0x00002158    0x10  iar_startup_lpc82x.o [1]
+  .text              ro code  0x00002168     0xc  cstartup_M.o [5]
+  .rodata            const    0x00002174     0x8  main.o [1]
+  .text              ro code  0x0000217c     0x8  sysinit.o [1]
+  .rodata            const    0x00002184     0x4  sysinit.o [1]
+  .rodata            const    0x00002188     0x4  sysinit.o [1]
+  .text              ro code  0x0000218c     0x4  iar_startup_lpc82x.o [1]
+                            - 0x00002190  0x1e90
 
-"P2", part 1 of 3:                           0x8
-  P2 s0                       0x10000020     0x8  <Init block>
-    .data            inited   0x10000020     0x4  calc_value.o [1]
-    .data            inited   0x10000024     0x4  calc_value.o [1]
-                            - 0x10000028     0x8
+"P2", part 1 of 3:                          0x48
+  P2 s0                       0x10000020    0x48  <Init block>
+    .data            inited   0x10000020    0x40  xfiles.o [3]
+    .data            inited   0x10000060     0x4  calc_value.o [1]
+    .data            inited   0x10000064     0x4  calc_value.o [1]
+                            - 0x10000068    0x48
 
-"P2", part 2 of 3:                          0x98
-  .bss               zero     0x10000028    0x40  ecd_flash.o [1]
-  .bss               zero     0x10000068    0x20  calc_value.o [1]
-  .bss               zero     0x10000088    0x14  spi_slaver.o [1]
-  .bss               zero     0x1000009c     0xc  spi_slaver.o [1]
-  .bss               zero     0x100000a8     0x4  chip_8xx.o [1]
-  .bss               zero     0x100000ac     0x4  mlx90316.o [1]
-  .bss               zero     0x100000b0     0x2  irc_8xx.o [1]
-  .bss               zero     0x100000b2     0x2  main.o [1]
-  .bss               zero     0x100000b4     0x2  spi_slaver.o [1]
-  .bss               zero     0x100000b6     0x1  main.o [1]
-  .bss               zero     0x100000b7     0x1  spi_slaver.o [1]
-  .bss               zero     0x100000b8     0x1  spi_slaver.o [1]
-  .bss               zero     0x100000b9     0x1  spi_slaver.o [1]
-  .bss               zero     0x100000ba     0x1  spi_slaver.o [1]
-  .bss               zero     0x100000bb     0x1  spi_slaver.o [1]
-  .bss               zero     0x100000bc     0x1  spi_slaver.o [1]
-                            - 0x100000bd    0x95
+"P2", part 2 of 3:                          0xe8
+  .bss               zero     0x10000068    0x50  xfiles.o [3]
+  .bss               zero     0x100000b8    0x40  ecd_flash.o [1]
+  .bss               zero     0x100000f8    0x20  calc_value.o [1]
+  .bss               zero     0x10000118    0x14  spi_slaver.o [1]
+  .bss               zero     0x1000012c     0xc  spi_slaver.o [1]
+  .bss               zero     0x10000138     0x4  chip_8xx.o [1]
+  .bss               zero     0x1000013c     0x4  mlx90316.o [1]
+  .bss               zero     0x10000140     0x2  irc_8xx.o [1]
+  .bss               zero     0x10000142     0x2  main.o [1]
+  .bss               zero     0x10000144     0x2  mlx90316.o [1]
+  .bss               zero     0x10000146     0x2  spi_slaver.o [1]
+  .bss               zero     0x10000148     0x1  main.o [1]
+  .bss               zero     0x10000149     0x1  spi_slaver.o [1]
+  .bss               zero     0x1000014a     0x1  spi_slaver.o [1]
+  .bss               zero     0x1000014b     0x1  spi_slaver.o [1]
+  .bss               zero     0x1000014c     0x1  spi_slaver.o [1]
+  .bss               zero     0x1000014d     0x1  spi_slaver.o [1]
+  .bss               zero     0x1000014e     0x1  spi_slaver.o [1]
+                            - 0x1000014f    0xe7
 
 "P2", part 3 of 3:                         0x200
-  CSTACK                      0x100000c0   0x200  <Block>
-    CSTACK           uninit   0x100000c0   0x200  <Block tail>
-                            - 0x100002c0   0x200
+  CSTACK                      0x10000150   0x200  <Block>
+    CSTACK           uninit   0x10000150   0x200  <Block tail>
+                            - 0x10000350   0x200
 
 
 *******************************************************************************
@@ -181,14 +196,14 @@ initialize by copy { rw };
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x95:
-          0x10000028  0x95
+    1 destination range, total size 0xe7:
+          0x10000068  0xe7
 
 Copy (__iar_copy_init3)
-    1 source range, total size 0x8:
-          0x000000c0   0x8
-    1 destination range, total size 0x8:
-          0x10000020   0x8
+    1 source range, total size 0x48:
+          0x000000c0  0x48
+    1 destination range, total size 0x48:
+          0x10000020  0x48
 
 
 
@@ -201,7 +216,7 @@ Copy (__iar_copy_init3)
 C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj: [1]
     calc_value.o              352        8       40
     chip_8xx.o                 16                 4
-    clock_8xx.o               304       64
+    clock_8xx.o               608       64
     ecd_flash.o                92                64
     gpio_8xx.o                 38
     iap.o                     132
@@ -209,16 +224,18 @@ C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj: [
     iocon_8xx.o                36
     irc_8xx.o                 288      854        2
     led.o                      80
-    main.o                    432                 3
-    mlx90316.o                828                 4
-    spi_slaver.o              876                40
+    main.o                    456        8        3
+    mlx90316.o                836                 6
+    spi_slaver.o              896                40
     spim_8xx.o                120
     swm_8xx.o                  56
     syscon_8xx.o               64
     sysinit.o                   8        8
     sysinit_8xx.o              32
+    uart.o                    296
+    uart_8xx.o                218
     -----------------------------------------------
-    Total:                  3 978      934      157
+    Total:                  4 848      942      159
 
 command line: [2]
     -----------------------------------------------
@@ -228,8 +245,13 @@ dl6M_tlf.a: [3]
     abs.o                       8
     exit.o                      8
     low_level_init.o            4
+    printf.o                   36
+    putchar.o                  16
+    xfiles.o                            64      144
+    xprintftiny.o             384
+    xprout.o                   22
     -----------------------------------------------
-    Total:                     20
+    Total:                    478       64      144
 
 m6M_tl.a: [4]
     DblDiv.o                  194
@@ -245,25 +267,29 @@ m6M_tl.a: [4]
 
 rt6M_tl.a: [5]
     I32DivModFast.o           174
+    I64DivMod.o               106
+    I64DivZer.o                 2
+    I64Mul.o                   50
     IntDivZer.o                 2
     cexit.o                    10
     cmain.o                    26
     copy_init3.o               48
     cstartup_M.o               12
     data_init.o                40
+    strlen.o                   16
     zero_init3.o               60
     -----------------------------------------------
-    Total:                    372
+    Total:                    546
 
 shb_l.a: [6]
     exit.o                     20
     -----------------------------------------------
     Total:                     20
 
-    Gaps                        8
+    Gaps                       14
     Linker created                      36      512
 ---------------------------------------------------
-    Grand Total:            5 542      970      669
+    Grand Total:            7 050    1 042      815
 
 
 *******************************************************************************
@@ -272,208 +298,270 @@ shb_l.a: [6]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x00001ae8          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x00001b0c          --   Gb  - Linker created -
-?main                   0x00001b2d         Code  Gb  cmain.o [5]
-CSTACK$$Base            0x100000c0          --   Gb  - Linker created -
-CSTACK$$Limit           0x100002c0          --   Gb  - Linker created -
-Calc_Master_Delta       0x00001575   0x96  Code  Lc  calc_value.o [1]
-Calc_Slaver_Delta       0x0000151d   0x58  Code  Lc  calc_value.o [1]
+.iar.init_table$$Base   0x000020a4          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000020c8          --   Gb  - Linker created -
+?main                   0x000020e9         Code  Gb  cmain.o [5]
+CSTACK$$Base            0x10000150          --   Gb  - Linker created -
+CSTACK$$Limit           0x10000350          --   Gb  - Linker created -
+Calc_Master_Delta       0x000018a1   0x96  Code  Lc  calc_value.o [1]
+Calc_Slaver_Delta       0x00001849   0x58  Code  Lc  calc_value.o [1]
 Chip_Clock_DisablePeriphClock
-                        0x00000a6f   0x14  Code  Lc  mlx90316.o [1]
+                        0x00000a83   0x14  Code  Lc  mlx90316.o [1]
 Chip_Clock_DisablePeriphClock
                         0x00000361   0x14  Code  Lc  spi_slaver.o [1]
+Chip_Clock_DisablePeriphClock
+                        0x000016d9   0x14  Code  Lc  uart.o [1]
 Chip_Clock_EnablePeriphClock
-                        0x0000167d   0x14  Code  Lc  gpio_8xx.o [1]
+                        0x000019cd   0x14  Code  Lc  gpio_8xx.o [1]
 Chip_Clock_EnablePeriphClock
-                        0x00000a5b   0x14  Code  Lc  mlx90316.o [1]
+                        0x00000a6f   0x14  Code  Lc  mlx90316.o [1]
 Chip_Clock_EnablePeriphClock
                         0x0000034d   0x14  Code  Lc  spi_slaver.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x000016c5   0x14  Code  Lc  uart.o [1]
+Chip_Clock_EnablePeriphClock
+                        0x00001a33   0x14  Code  Lc  uart_8xx.o [1]
 Chip_Clock_GetExtClockInRate
-                        0x000010d7    0x6  Code  Lc  clock_8xx.o [1]
+                        0x0000115f    0x6  Code  Lc  clock_8xx.o [1]
 Chip_Clock_GetIntOscRate
-                        0x000010d3    0x4  Code  Lc  clock_8xx.o [1]
+                        0x0000115b    0x4  Code  Lc  clock_8xx.o [1]
 Chip_Clock_GetMainClockRate
-                        0x00001189   0x34  Code  Gb  clock_8xx.o [1]
+                        0x00001211   0x34  Code  Gb  clock_8xx.o [1]
 Chip_Clock_GetMainOscRate
-                        0x000010cd    0x6  Code  Lc  clock_8xx.o [1]
-Chip_Clock_GetPLLFreq   0x000010fd    0xe  Code  Lc  clock_8xx.o [1]
+                        0x00001155    0x6  Code  Lc  clock_8xx.o [1]
+Chip_Clock_GetPLLFreq   0x00001185    0xe  Code  Lc  clock_8xx.o [1]
 Chip_Clock_GetSystemClockRate
-                        0x000011bd   0x12  Code  Gb  clock_8xx.o [1]
+                        0x00001245   0x12  Code  Gb  clock_8xx.o [1]
 Chip_Clock_GetSystemPLLInClockRate
-                        0x00001143   0x30  Code  Gb  clock_8xx.o [1]
+                        0x000011cb   0x30  Code  Gb  clock_8xx.o [1]
 Chip_Clock_GetSystemPLLOutClockRate
-                        0x00001173   0x16  Code  Gb  clock_8xx.o [1]
+                        0x000011fb   0x16  Code  Gb  clock_8xx.o [1]
+Chip_Clock_GetUARTClockDiv
+                        0x0000112d    0x8  Code  Lc  clock_8xx.o [1]
+Chip_Clock_GetUSARTNBaseClockRate
+                        0x00001257   0x50  Code  Gb  clock_8xx.o [1]
 Chip_Clock_GetWDTLFORate
-                        0x000010dd   0x20  Code  Lc  clock_8xx.o [1]
+                        0x00001165   0x20  Code  Lc  clock_8xx.o [1]
 Chip_Clock_GetWDTOSCRate
-                        0x00001133   0x10  Code  Gb  clock_8xx.o [1]
+                        0x000011bb   0x10  Code  Gb  clock_8xx.o [1]
 Chip_Clock_IsSystemPLLLocked
-                        0x000018cb    0xc  Code  Lc  irc_8xx.o [1]
+                        0x00001e87    0xc  Code  Lc  irc_8xx.o [1]
 Chip_Clock_SetMainClockSource
-                        0x0000111f   0x14  Code  Gb  clock_8xx.o [1]
+                        0x000011a7   0x14  Code  Gb  clock_8xx.o [1]
 Chip_Clock_SetSysClockDiv
-                        0x000018d7    0x6  Code  Lc  irc_8xx.o [1]
+                        0x00001e93    0x6  Code  Lc  irc_8xx.o [1]
 Chip_Clock_SetSystemPLLSource
-                        0x0000110b   0x14  Code  Gb  clock_8xx.o [1]
+                        0x00001193   0x14  Code  Gb  clock_8xx.o [1]
+Chip_Clock_SetUARTClockDiv
+                        0x00001127    0x6  Code  Lc  clock_8xx.o [1]
+Chip_Clock_SetUARTClockDiv
+                        0x000016ed    0x6  Code  Lc  uart.o [1]
+Chip_Clock_SetUSARTNBaseClockRate
+                        0x000012a7   0x5e  Code  Gb  clock_8xx.o [1]
 Chip_Clock_SetupSystemPLL
-                        0x000018b5   0x16  Code  Lc  irc_8xx.o [1]
+                        0x00001e71   0x16  Code  Lc  irc_8xx.o [1]
 Chip_FMC_SetFLASHAccess
-                        0x000018dd   0x10  Code  Lc  irc_8xx.o [1]
-Chip_GPIO_Init          0x00001699    0xa  Code  Gb  gpio_8xx.o [1]
+                        0x00001e99   0x10  Code  Lc  irc_8xx.o [1]
+Chip_GPIO_Init          0x000019e9    0xa  Code  Gb  gpio_8xx.o [1]
 Chip_GPIO_SetPinDIROutput
-                        0x00001471   0x14  Code  Lc  led.o [1]
-Chip_GPIO_SetPinToggle  0x00001485   0x14  Code  Lc  led.o [1]
+                        0x00001675   0x14  Code  Lc  led.o [1]
+Chip_GPIO_SetPinToggle  0x00001689   0x14  Code  Lc  led.o [1]
 Chip_IAP_CopyRamToFlash
-                        0x000016c9   0x2c  Code  Gb  iap.o [1]
-Chip_IAP_ErasePage      0x000016f5   0x2a  Code  Gb  iap.o [1]
+                        0x00001af5   0x2c  Code  Gb  iap.o [1]
+Chip_IAP_ErasePage      0x00001b21   0x2a  Code  Gb  iap.o [1]
 Chip_IAP_PreSectorForReadWrite
-                        0x000016ad   0x1c  Code  Gb  iap.o [1]
+                        0x00001ad9   0x1c  Code  Gb  iap.o [1]
 Chip_IOCON_PinSetI2CMode
-                        0x0000066d   0x20  Code  Gb  iocon_8xx.o [1]
-Chip_IRC_SetFreq        0x00001937   0x7e  Code  Gb  irc_8xx.o [1]
-Chip_SPIM_DelayConfig   0x00000d9b   0x32  Code  Gb  spim_8xx.o [1]
-Chip_SPIM_GetClockRate  0x00000d59   0x14  Code  Gb  spim_8xx.o [1]
-Chip_SPIM_SetClockRate  0x00000d6d   0x2e  Code  Gb  spim_8xx.o [1]
+                        0x00000681   0x20  Code  Gb  iocon_8xx.o [1]
+Chip_IRC_SetFreq        0x00001ef3   0x7e  Code  Gb  irc_8xx.o [1]
+Chip_SPIM_DelayConfig   0x00000db7   0x32  Code  Gb  spim_8xx.o [1]
+Chip_SPIM_GetClockRate  0x00000d75   0x14  Code  Gb  spim_8xx.o [1]
+Chip_SPIM_SetClockRate  0x00000d89   0x2e  Code  Gb  spim_8xx.o [1]
 Chip_SPI_ClearCFGRegBits
-                        0x00000a91    0xe  Code  Lc  mlx90316.o [1]
+                        0x00000aa5    0xe  Code  Lc  mlx90316.o [1]
 Chip_SPI_ClearCFGRegBits
                         0x00000383    0xe  Code  Lc  spi_slaver.o [1]
-Chip_SPI_ClearStatus    0x00000aeb    0x4  Code  Lc  mlx90316.o [1]
+Chip_SPI_ClearStatus    0x00000aff    0x4  Code  Lc  mlx90316.o [1]
 Chip_SPI_ClearStatus    0x000003e5    0x4  Code  Lc  spi_slaver.o [1]
 Chip_SPI_ClearTXCTRLRegBits
-                        0x00000afb    0xc  Code  Lc  mlx90316.o [1]
+                        0x00000b0f    0xc  Code  Lc  mlx90316.o [1]
 Chip_SPI_ClearTXCTRLRegBits
                         0x000003f9    0xc  Code  Lc  spi_slaver.o [1]
-Chip_SPI_ConfigureSPI   0x00000acd   0x1e  Code  Lc  mlx90316.o [1]
+Chip_SPI_ConfigureSPI   0x00000ae1   0x1e  Code  Lc  mlx90316.o [1]
 Chip_SPI_ConfigureSPI   0x000003bf   0x1e  Code  Lc  spi_slaver.o [1]
-Chip_SPI_Enable         0x00000ac3    0xa  Code  Lc  mlx90316.o [1]
+Chip_SPI_Enable         0x00000ad7    0xa  Code  Lc  mlx90316.o [1]
 Chip_SPI_Enable         0x000003b5    0xa  Code  Lc  spi_slaver.o [1]
 Chip_SPI_EnableInts     0x000003e9    0x4  Code  Lc  spi_slaver.o [1]
 Chip_SPI_GetStatus      0x000003dd    0x8  Code  Lc  spi_slaver.o [1]
-Chip_SPI_Init           0x00000a9f   0x24  Code  Lc  mlx90316.o [1]
+Chip_SPI_Init           0x00000ab3   0x24  Code  Lc  mlx90316.o [1]
 Chip_SPI_Init           0x00000391   0x24  Code  Lc  spi_slaver.o [1]
-Chip_SPI_SetCFGRegBits  0x00000a83    0xe  Code  Lc  mlx90316.o [1]
+Chip_SPI_SetCFGRegBits  0x00000a97    0xe  Code  Lc  mlx90316.o [1]
 Chip_SPI_SetCFGRegBits  0x00000375    0xe  Code  Lc  spi_slaver.o [1]
 Chip_SPI_SetTXCTRLRegBits
-                        0x00000aef    0xc  Code  Lc  mlx90316.o [1]
+                        0x00000b03    0xc  Code  Lc  mlx90316.o [1]
 Chip_SPI_SetTXCTRLRegBits
                         0x000003ed    0xc  Code  Lc  spi_slaver.o [1]
-Chip_SPI_SetXferSize    0x00000b07   0x22  Code  Lc  mlx90316.o [1]
+Chip_SPI_SetXferSize    0x00000b1b   0x22  Code  Lc  mlx90316.o [1]
 Chip_SPI_SetXferSize    0x00000405   0x22  Code  Lc  spi_slaver.o [1]
+Chip_SWM_DisableFixedPin
+                        0x000016f3   0x14  Code  Lc  uart.o [1]
 Chip_SWM_MovablePinAssign
-                        0x00000691   0x30  Code  Gb  swm_8xx.o [1]
+                        0x000006a5   0x30  Code  Gb  swm_8xx.o [1]
 Chip_SYSCTL_AssertPeriphReset
-                        0x00000a1d   0x14  Code  Lc  mlx90316.o [1]
+                        0x000010e9   0x14  Code  Lc  clock_8xx.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x00000a31   0x14  Code  Lc  mlx90316.o [1]
 Chip_SYSCTL_AssertPeriphReset
                         0x0000030f   0x14  Code  Lc  spi_slaver.o [1]
+Chip_SYSCTL_AssertPeriphReset
+                        0x000019f5   0x14  Code  Lc  uart_8xx.o [1]
 Chip_SYSCTL_DeassertPeriphReset
-                        0x00000a31   0x14  Code  Lc  mlx90316.o [1]
+                        0x000010fd   0x14  Code  Lc  clock_8xx.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x00000a45   0x14  Code  Lc  mlx90316.o [1]
 Chip_SYSCTL_DeassertPeriphReset
                         0x00000323   0x14  Code  Lc  spi_slaver.o [1]
+Chip_SYSCTL_DeassertPeriphReset
+                        0x00001a09   0x14  Code  Lc  uart_8xx.o [1]
+Chip_SYSCTL_GetUSARTFRGDivider
+                        0x0000113d    0x8  Code  Lc  clock_8xx.o [1]
+Chip_SYSCTL_GetUSARTFRGMultiplier
+                        0x0000114d    0x8  Code  Lc  clock_8xx.o [1]
 Chip_SYSCTL_PeriphReset
-                        0x00000a45   0x16  Code  Lc  mlx90316.o [1]
+                        0x00001111   0x16  Code  Lc  clock_8xx.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x00000a59   0x16  Code  Lc  mlx90316.o [1]
 Chip_SYSCTL_PeriphReset
                         0x00000337   0x16  Code  Lc  spi_slaver.o [1]
-Chip_SYSCTL_PowerDown   0x000019d5   0x1c  Code  Gb  syscon_8xx.o [1]
-Chip_SYSCTL_PowerUp     0x000019f1   0x1a  Code  Gb  syscon_8xx.o [1]
-Chip_SetupIrcClocking   0x00001b0d    0xc  Code  Gb  sysinit_8xx.o [1]
-Chip_SystemInit         0x00001b25    0x8  Code  Gb  sysinit_8xx.o [1]
-ExtRateIn               0x00001b9c    0x4  Data  Gb  sysinit.o [1]
+Chip_SYSCTL_PeriphReset
+                        0x00001a1d   0x16  Code  Lc  uart_8xx.o [1]
+Chip_SYSCTL_PowerDown   0x00001f91   0x1c  Code  Gb  syscon_8xx.o [1]
+Chip_SYSCTL_PowerUp     0x00001fad   0x1a  Code  Gb  syscon_8xx.o [1]
+Chip_SYSCTL_SetUSARTFRGDivider
+                        0x00001135    0x8  Code  Lc  clock_8xx.o [1]
+Chip_SYSCTL_SetUSARTFRGMultiplier
+                        0x00001145    0x8  Code  Lc  clock_8xx.o [1]
+Chip_SetupIrcClocking   0x000020c9    0xc  Code  Gb  sysinit_8xx.o [1]
+Chip_SystemInit         0x000020e1    0x8  Code  Gb  sysinit_8xx.o [1]
+Chip_UART_ConfigData    0x00001725    0xc  Code  Lc  uart.o [1]
+Chip_UART_Enable        0x00001707    0xe  Code  Lc  uart.o [1]
+Chip_UART_GetStatus     0x00001731    0x8  Code  Lc  uart.o [1]
+Chip_UART_Init          0x00001a61   0x34  Code  Gb  uart_8xx.o [1]
+Chip_UART_SendByte      0x0000171f    0x6  Code  Lc  uart.o [1]
+Chip_UART_SetBaud       0x00001ab5   0x1a  Code  Gb  uart_8xx.o [1]
+Chip_UART_TXEnable      0x00001715    0xa  Code  Lc  uart.o [1]
+Debug_UART_Init         0x0000176b   0x36  Code  Gb  uart.o [1]
+ExtRateIn               0x00002188    0x4  Data  Gb  sysinit.o [1]
 Init_SPIS_PinMux        0x00000497   0x46  Code  Lc  spi_slaver.o [1]
-Init_SPI_PinMux         0x00000b29   0x4e  Code  Lc  mlx90316.o [1]
-LED_GPIO_Config         0x00001499   0x18  Code  Gb  led.o [1]
-LED_Toggle              0x000014b1   0x10  Code  Gb  led.o [1]
-MLX90316_ReadData       0x00000c4d   0xc8  Code  Gb  mlx90316.o [1]
-Mlx90316_SPI_Config     0x00000c41    0xc  Code  Gb  mlx90316.o [1]
+Init_SPI_PinMux         0x00000b3d   0x4e  Code  Lc  mlx90316.o [1]
+LED_GPIO_Config         0x0000169d   0x18  Code  Gb  led.o [1]
+LED_Toggle              0x000016b5   0x10  Code  Gb  led.o [1]
+MLX90316_ReadData       0x00000c61   0xcc  Code  Gb  mlx90316.o [1]
+MLX90316_ReadData::angle_14b
+                        0x10000144    0x2  Data  Lc  mlx90316.o [1]
+Mlx90316_SPI_Config     0x00000c55    0xc  Code  Gb  mlx90316.o [1]
 NVIC_EnableIRQ          0x00000301    0xe  Code  Lc  spi_slaver.o [1]
-NVIC_SetPriority        0x000012b1   0x84  Code  Lc  main.o [1]
-OscRateIn               0x00001b98    0x4  Data  Gb  sysinit.o [1]
-RatioK                  0x10000024    0x4  Data  Lc  calc_value.o [1]
-ReadMSDir               0x00001379    0x6  Code  Lc  main.o [1]
-ReadMasterStartValue    0x00001373    0x6  Code  Lc  main.o [1]
-ReadRecordFlag          0x00001365    0x8  Code  Lc  main.o [1]
-ReadSlaverStartValue    0x0000136d    0x6  Code  Lc  main.o [1]
-Region$$Table$$Base     0x00001ae8          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00001b0c          --   Gb  - Linker created -
-SPI1_IRQHandler         0x00000531   0xec  Code  Gb  spi_slaver.o [1]
+NVIC_SetPriority        0x0000149d   0x84  Code  Lc  main.o [1]
+OscRateIn               0x00002184    0x4  Data  Gb  sysinit.o [1]
+RatioK                  0x10000064    0x4  Data  Lc  calc_value.o [1]
+ReadMSDir               0x00001565    0x6  Code  Lc  main.o [1]
+ReadMasterStartValue    0x0000155f    0x6  Code  Lc  main.o [1]
+ReadRecordFlag          0x00001551    0x8  Code  Lc  main.o [1]
+ReadSlaverStartValue    0x00001559    0x6  Code  Lc  main.o [1]
+Region$$Table$$Base     0x000020a4          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000020c8          --   Gb  - Linker created -
+SPI1_IRQHandler         0x0000053d   0xfa  Code  Gb  spi_slaver.o [1]
 SPI1_IRQHandler::dummy_datah
-                        0x100000b9    0x1  Data  Lc  spi_slaver.o [1]
+                        0x1000014b    0x1  Data  Lc  spi_slaver.o [1]
 SPI1_IRQHandler::dummy_datahn
-                        0x100000bb    0x1  Data  Lc  spi_slaver.o [1]
+                        0x1000014d    0x1  Data  Lc  spi_slaver.o [1]
 SPI1_IRQHandler::dummy_datal
-                        0x100000ba    0x1  Data  Lc  spi_slaver.o [1]
+                        0x1000014c    0x1  Data  Lc  spi_slaver.o [1]
 SPI1_IRQHandler::dummy_dataln
-                        0x100000bc    0x1  Data  Lc  spi_slaver.o [1]
+                        0x1000014e    0x1  Data  Lc  spi_slaver.o [1]
 SPI1_IRQHandler::dummy_value
-                        0x100000b4    0x2  Data  Lc  spi_slaver.o [1]
-SPI1_IRQHandler::i      0x100000b8    0x1  Data  Lc  spi_slaver.o [1]
-SPI1_IRQHandler::rcv    0x1000009c    0xc  Data  Lc  spi_slaver.o [1]
+                        0x10000146    0x2  Data  Lc  spi_slaver.o [1]
+SPI1_IRQHandler::i      0x1000014a    0x1  Data  Lc  spi_slaver.o [1]
+SPI1_IRQHandler::rcv    0x1000012c    0xc  Data  Lc  spi_slaver.o [1]
 SPI1_IRQHandler::rcvdat
-                        0x10000088   0x14  Data  Lc  spi_slaver.o [1]
+                        0x10000118   0x14  Data  Lc  spi_slaver.o [1]
 SPI1_IRQHandler::rcvtmp
-                        0x100000b7    0x1  Data  Lc  spi_slaver.o [1]
+                        0x10000149    0x1  Data  Lc  spi_slaver.o [1]
 SPI1_WaitRXRDY          0x0000044b   0x24  Code  Gb  spi_slaver.o [1]
 SPI1_WaitTXRDY          0x00000427   0x24  Code  Gb  spi_slaver.o [1]
 SampleAndCalcEncoderValue
-                        0x0000160b   0x62  Code  Gb  calc_value.o [1]
-SendRecv_Start          0x00000bcb   0x2a  Code  Lc  mlx90316.o [1]
-SendRecv_Stop           0x00000c1b   0x26  Code  Lc  mlx90316.o [1]
-Send_Byte               0x00000bf5   0x26  Code  Lc  mlx90316.o [1]
-Slaver_SPI_Config       0x00000525    0xc  Code  Gb  spi_slaver.o [1]
+                        0x00001937   0x62  Code  Gb  calc_value.o [1]
+SendRecv_Start          0x00000bdf   0x2a  Code  Lc  mlx90316.o [1]
+SendRecv_Stop           0x00000c2f   0x26  Code  Lc  mlx90316.o [1]
+Send_Byte               0x00000c09   0x26  Code  Lc  mlx90316.o [1]
+Slaver_SPI_Config       0x00000531    0xc  Code  Gb  spi_slaver.o [1]
 Slaver_Send_Byte        0x0000046f   0x28  Code  Gb  spi_slaver.o [1]
-SysTick_Config          0x00001335   0x30  Code  Lc  main.o [1]
-SysTick_Handler         0x00001409   0x22  Code  Gb  main.o [1]
+SysTick_Config          0x00001521   0x30  Code  Lc  main.o [1]
+SysTick_Handler         0x0000160b   0x22  Code  Gb  main.o [1]
 SysTick_Handler::mlx_rd_cnt
-                        0x100000b2    0x2  Data  Lc  main.o [1]
-SystemCoreClock         0x100000a8    0x4  Data  Gb  chip_8xx.o [1]
-SystemCoreClockUpdate   0x00001461   0x10  Code  Gb  chip_8xx.o [1]
-SystemInit              0x00001b91    0x8  Code  Gb  sysinit.o [1]
-WriteSlaverStartValue   0x000014c1   0x5c  Code  Gb  ecd_flash.o [1]
+                        0x10000142    0x2  Data  Lc  main.o [1]
+SystemCoreClock         0x10000138    0x4  Data  Gb  chip_8xx.o [1]
+SystemCoreClockUpdate   0x00001665   0x10  Code  Gb  chip_8xx.o [1]
+SystemInit              0x0000217d    0x8  Code  Gb  sysinit.o [1]
+UART_SWM_Init           0x00001739   0x32  Code  Lc  uart.o [1]
+WriteSlaverStartValue   0x000017ed   0x5c  Code  Gb  ecd_flash.o [1]
+_PrintfTiny             0x00001cf9  0x166  Code  Gb  xprintftiny.o [3]
+_Prout                  0x00002131   0x16  Code  Gb  xprout.o [3]
 __Vectors               0x00000000          --   Gb  iar_startup_lpc82x.o [1]
 __Vectors_End           0x000000c0         Data  Gb  iar_startup_lpc82x.o [1]
 __Vectors_Size {Abs}    0x000000c0          --   Gb  iar_startup_lpc82x.o [1]
-__aeabi_d2f             0x00001069         Code  Gb  DblToFlt.o [4]
-__aeabi_ddiv            0x00000e23         Code  Gb  DblDiv.o [4]
-__aeabi_dmul            0x00000ee5         Code  Gb  DblMul.o [4]
-__aeabi_f2d             0x00000df1         Code  Gb  FltToDbl.o [4]
-__aeabi_f2uiz           0x0000188d         Code  Gb  FltToU32.o [4]
-__aeabi_fdiv            0x00001731         Code  Gb  FltDiv.o [4]
-__aeabi_fmul            0x000017db         Code  Gb  FltMul.o [4]
-__aeabi_idiv0           0x000012ad         Code  Gb  IntDivZer.o [5]
-__aeabi_ui2f            0x00000dd1         Code  Gb  I32ToFlt.o [4]
-__aeabi_uidiv           0x000011fd         Code  Gb  I32DivModFast.o [5]
-__aeabi_uidivmod        0x000011fd         Code  Gb  I32DivModFast.o [5]
-__cmain                 0x00001b2d         Code  Gb  cmain.o [5]
-__exit                  0x00001b61   0x14  Code  Gb  exit.o [6]
-__iar_copy_init3        0x00001a91   0x30  Code  Gb  copy_init3.o [5]
-__iar_data_init3        0x00001ac1   0x28  Code  Gb  data_init.o [5]
-__iar_program_start     0x00001b85         Code  Gb  cstartup_M.o [5]
-__iar_ui2f              0x00000dd5         Code  Gb  I32ToFlt.o [4]
-__iar_zero_init3        0x00001a55   0x3c  Code  Gb  zero_init3.o [5]
-__low_level_init        0x00001b47    0x4  Code  Gb  low_level_init.o [3]
+__aeabi_d2f             0x00001085         Code  Gb  DblToFlt.o [4]
+__aeabi_ddiv            0x00000e3f         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x00000f01         Code  Gb  DblMul.o [4]
+__aeabi_f2d             0x00000e0d         Code  Gb  FltToDbl.o [4]
+__aeabi_f2uiz           0x00001cb9         Code  Gb  FltToU32.o [4]
+__aeabi_fdiv            0x00001b5d         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x00001c07         Code  Gb  FltMul.o [4]
+__aeabi_idiv0           0x00001495         Code  Gb  IntDivZer.o [5]
+__aeabi_ldiv0           0x00001499         Code  Gb  I64DivZer.o [5]
+__aeabi_lmul            0x000013f9         Code  Gb  I64Mul.o [5]
+__aeabi_ui2f            0x00000ded         Code  Gb  I32ToFlt.o [4]
+__aeabi_uidiv           0x00001349         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x00001349         Code  Gb  I32DivModFast.o [5]
+__aeabi_uldivmod        0x0000142b         Code  Gb  I64DivMod.o [5]
+__cmain                 0x000020e9         Code  Gb  cmain.o [5]
+__exit                  0x0000211d   0x14  Code  Gb  exit.o [6]
+__iar_Stdout            0x10000020   0x40  Data  Gb  xfiles.o [3]
+__iar_copy_init3        0x0000204d   0x30  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x0000207d   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x00002169         Code  Gb  cstartup_M.o [5]
+__iar_ui2f              0x00000df1         Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x00002011   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00002103    0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x00000000         Data  Gb  iar_startup_lpc82x.o [1]
 __vector_table_0x1c     0x00000010         Data  Gb  iar_startup_lpc82x.o [1]
-_call_main              0x00001b39         Code  Gb  cmain.o [5]
-_exit                   0x00001b55         Code  Gb  cexit.o [5]
-_main                   0x00001b43         Code  Gb  cmain.o [5]
-abs                     0x00001729    0x8  Code  Gb  abs.o [3]
-config_tab              0x000006c8  0x354  Data  Lc  irc_8xx.o [1]
-config_tab_ct           0x00000dee    0x2  Data  Lc  irc_8xx.o [1]
-config_tab_idx          0x100000b0    0x2  Data  Lc  irc_8xx.o [1]
-ecdval                  0x10000028   0x40  Data  Gb  ecd_flash.o [1]
-exit                    0x00001b4b    0x8  Code  Gb  exit.o [3]
-iap_entry               0x000016a5    0x8  Code  Lc  iap.o [1]
-main                    0x0000137f   0x8a  Code  Gb  main.o [1]
-mlx_rd_flag             0x100000b6    0x1  Data  Lc  main.o [1]
-pll_config              0x000018ed   0x4a  Code  Lc  irc_8xx.o [1]
-psEncoderValue          0x10000020    0x4  Data  Gb  calc_value.o [1]
-sEncoderValue           0x10000068   0x20  Data  Gb  calc_value.o [1]
-setupMaster             0x00000b77   0x54  Code  Lc  mlx90316.o [1]
+_call_main              0x000020f5         Code  Gb  cmain.o [5]
+_exit                   0x00002111         Code  Gb  cexit.o [5]
+_main                   0x000020ff         Code  Gb  cmain.o [5]
+abs                     0x00001b55    0x8  Code  Gb  abs.o [3]
+config_tab              0x000006dc  0x354  Data  Lc  irc_8xx.o [1]
+config_tab_ct           0x00000e0a    0x2  Data  Lc  irc_8xx.o [1]
+config_tab_idx          0x10000140    0x2  Data  Lc  irc_8xx.o [1]
+ecdval                  0x100000b8   0x40  Data  Gb  ecd_flash.o [1]
+exit                    0x00002107    0x8  Code  Gb  exit.o [3]
+fputc                   0x000017a1   0x24  Code  Gb  uart.o [1]
+getUARTClockID          0x00001a47   0x1a  Code  Lc  uart_8xx.o [1]
+iap_entry               0x00001ad1    0x8  Code  Lc  iap.o [1]
+main                    0x0000156b   0xa0  Code  Gb  main.o [1]
+mlx_rd_flag             0x10000148    0x1  Data  Lc  main.o [1]
+obuf                    0x10000068   0x50  Data  Lc  xfiles.o [3]
+out                     0x00001cdf   0x1a  Code  Lc  xprintftiny.o [3]
+pll_config              0x00001ea9   0x4a  Code  Lc  irc_8xx.o [1]
+printf                  0x000019a9   0x24  Code  Gb  printf.o [3]
+psEncoderValue          0x10000060    0x4  Data  Gb  calc_value.o [1]
+putchar                 0x00002149   0x10  Code  Gb  putchar.o [3]
+sEncoderValue           0x100000f8   0x20  Data  Gb  calc_value.o [1]
+setupMaster             0x00000b8b   0x54  Code  Lc  mlx90316.o [1]
 setupMaster::spi_clk_rate
-                        0x100000ac    0x4  Data  Lc  mlx90316.o [1]
+                        0x1000013c    0x4  Data  Lc  mlx90316.o [1]
 setupSlave              0x000004dd   0x3e  Code  Lc  spi_slaver.o [1]
-wdtOSCRate              0x00001a14   0x40  Data  Lc  clock_8xx.o [1]
+strlen                  0x00001e5f   0x10  Code  Gb  strlen.o [5]
+wdtOSCRate              0x00001fd0   0x40  Data  Lc  clock_8xx.o [1]
 
 
 [1] = C:\Users\Administrator\Desktop\multicoil_encoder_firmware_iar\EWARM\Debug\Obj
@@ -483,9 +571,9 @@ wdtOSCRate              0x00001a14   0x40  Data  Lc  clock_8xx.o [1]
 [5] = rt6M_tl.a
 [6] = shb_l.a
 
-  5 542 bytes of readonly  code memory
-    970 bytes of readonly  data memory
-    669 bytes of readwrite data memory
+  7 050 bytes of readonly  code memory
+  1 042 bytes of readonly  data memory
+    815 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

@@ -145,12 +145,12 @@ void SPISLAVEIRQHANDLER(void)
     static uint16_t dummy_value;
     uint16_t dummy_data;
     
-
+    dummy_value = psEncoderValue->delta/4;
     
-    dummy_data = (dummy_value++<<2) | 0x0001;
+    dummy_data = (dummy_value<<2) | 0x0001;
     dummy_datah = (uint8_t)(dummy_data>>8);
     dummy_datal = (uint8_t)(dummy_data>>0);
-    dummy_datahn = ~ dummy_datah;
+    dummy_datahn = ~dummy_datah;
     dummy_dataln = ~dummy_datal;
 
     if(dummy_value>16383)
@@ -169,12 +169,16 @@ void SPISLAVEIRQHANDLER(void)
           if( rcvtmp == 0xAA )
           {
               rcv[0]=Slaver_Send_Byte(0x00);//0xFF
-              
               rcv[1]=Slaver_Send_Byte(~dummy_datah);//frameh
               rcv[2]=Slaver_Send_Byte(~dummy_datal);//framel
+              rcv[3]=Slaver_Send_Byte(~dummy_datahn);//~frameh
+              rcv[4]=Slaver_Send_Byte(~dummy_dataln);//~framel
               
-              rcv[3]=Slaver_Send_Byte(dummy_datah);//~frameh
-              rcv[4]=Slaver_Send_Byte(dummy_datal);//~framel
+//              rcv[1]=Slaver_Send_Byte((uint8_t)(psEncoderValue->delta>>24));//frameh
+//              rcv[2]=Slaver_Send_Byte((uint8_t)(psEncoderValue->delta>>16));//framel
+//              
+//              rcv[3]=Slaver_Send_Byte((uint8_t)(psEncoderValue->delta>>8));//~frameh
+//              rcv[4]=Slaver_Send_Byte((uint8_t)(psEncoderValue->delta>>0));//~framel
               
               if(SPI1_WaitTXRDY())                            
                   LPC_SPI1->TXDAT = 0;   

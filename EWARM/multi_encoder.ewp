@@ -2052,6 +2052,9 @@
     <file>
       <name>$PROJ_DIR$\..\user\spi_slaver.c</name>
     </file>
+    <file>
+      <name>$PROJ_DIR$\..\user\uart.c</name>
+    </file>
   </group>
 </project>
 

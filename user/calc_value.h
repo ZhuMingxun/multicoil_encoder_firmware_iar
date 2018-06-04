@@ -9,6 +9,7 @@
 
 #ifndef _CALC_VALUE_H
 #define _CALC_VALUE_H
+#include <stdlib.h>
 
 
 typedef struct
@@ -27,7 +28,7 @@ extern EncoderValue_s *psEncoderValue;
 
 STATIC INLINE uint32_t Calc_Slaver_Delta()
 {
-    if( abs(psEncoderValue->slaver_tmp-psEncoderValue->slaver_start_value) < 3 )
+    if( abs(psEncoderValue->slaver_tmp-psEncoderValue->slaver_start_value) <= 5 )
     {
         psEncoderValue->slaver_tmp = psEncoderValue->slaver_start_value;
     }
@@ -47,7 +48,7 @@ STATIC INLINE uint32_t Calc_Master_Delta()
 {
     uint32_t ret_delta;
     
-    if( abs(psEncoderValue->master_tmp-psEncoderValue->master_start_value) < 3 )
+    if( abs(psEncoderValue->master_tmp-psEncoderValue->master_start_value) <= 5 )
     {
         psEncoderValue->master_tmp = psEncoderValue->master_start_value;
     }

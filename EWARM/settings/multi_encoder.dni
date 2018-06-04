@@ -39,7 +39,7 @@ TraceBufferSize=0x00010000
 TraceStallIfFIFOFull=0x00000000
 TracePortSize=0x00000000
 [DebugChecksum]
-Checksum=-141353187
+Checksum=2048596017
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -56,10 +56,13 @@ Sort=4 0
 Fmt0=uint32_t[16]	3	0
 Fmt1=uint32_t[5]	4	0
 [watch_formats]
-Fmt0={W}42:rdvar	3	0
-Fmt1={W}42:ret_code	3	0
-Fmt2={W}42:slaver_value	4	0
-Fmt3={W}42:value	3	0
+Fmt0={W}42:angle_14b	3	0
+Fmt1={W}42:dummy_datah	4	0
+Fmt2={W}42:dummy_datal	4	0
+Fmt3={W}42:rdvar	3	0
+Fmt4={W}42:ret_code	3	0
+Fmt5={W}42:slaver_value	4	0
+Fmt6={W}42:value	3	0
 [Trace1]
 Enabled=0
 ShowSource=1

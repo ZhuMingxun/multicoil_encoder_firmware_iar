@@ -12,6 +12,8 @@
 #include "led.h"
 #include "ecd_flash.h"
 #include "calc_value.h"
+#include "uart.h"
+#include "stdio.h"
 
 
 /*****************************************************************************
@@ -55,6 +57,8 @@ void main()
     
     /* Enable SysTick Timer 100Hz */
 	SysTick_Config(SystemCoreClock / 100);
+    
+    Debug_UART_Init();
 
     /* Read Flash to know wether start value was recorded or not */
     u32temp = ReadRecordFlag();
@@ -84,6 +88,8 @@ void main()
             LED_Toggle();
             
             SampleAndCalcEncoderValue();
+            
+            printf("%d,%d\r\n",psEncoderValue->master_tmp,psEncoderValue->slaver_tmp);
 
         }
         
